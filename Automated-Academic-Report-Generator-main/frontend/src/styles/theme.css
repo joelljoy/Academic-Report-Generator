@@ -1,0 +1,215 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+/* =========================
+   HEADER
+========================= */
+.app-header {
+  width: 100%;
+  background-color: #0080d5;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  border-bottom: 5px solid #006bb3;
+}
+
+.header-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* ✅ centers content horizontally */
+  gap: 25px;
+}
+
+
+.header-logo {
+  height: 90px;
+}
+
+.header-text-content {
+  color: white;
+  text-align: center; /* ✅ centers text */
+}
+
+
+.org-name {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.institute-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 4px 0;
+}
+
+.location-info,
+.affiliation-info {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffca28;
+}
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* =========================
+   TABS
+========================= */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.tab {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #0080d5;
+  background: #fff;
+  color: #0080d5;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab:hover {
+  background: #e6f3fb;
+}
+
+.tab.active {
+  background: #0080d5;
+  color: white;
+}
+
+/* =========================
+   FORM CARD (MAIN BLOCK)
+========================= */
+.form-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  min-height: 420px;
+}
+
+/* When NO tab selected */
+.form-card.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-card h2 {
+  font-size: 26px;
+  color: #0b5a7a;
+  margin-bottom: 10px;
+}
+
+.form-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.app-footer {
+  background-color: #1a1a1a;
+  color: #d1d1d1;
+  margin-top: 60px;
+  padding: 40px 0 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact-info address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.facebook { background: #3b5998; }
+.instagram { background: #e1306c; }
+.linkedin { background: #0077b5; }
+.youtube { background: #ff0000; }
+
+.footer-bottom {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  text-align: center;
+  font-size: 13px;
+}
+
+.browser-note {
+  color: #ff6b6b;
+  margin-top: 8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .institute-name {
+    font-size: 22px;
+  }
+}
